@@ -23,7 +23,12 @@ var down = false;
 window.onload = init;
 
 function init() {
-
+      
+    var image = document.getElementById("frame");
+    // c.font = "25px Georgia";
+    // c.strokeStyle = "blue";
+    // c.strokeText("CLEAR CANVAS",canvas.width/1.25,20);
+    c.drawImage(image,0,0,canvas.width, canvas.height);
 
     canvas.onmousedown = function (e) {
         down = true;
